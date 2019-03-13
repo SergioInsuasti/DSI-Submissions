@@ -1,0 +1,41 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+    <center> <h1><u><font color="blue">Machine Learning with SELLABLE Data</font></u></h1></center>
+    <div style="position: absolute; width: 600px; height: 200px; z-index: 15; top: 40%; left: 40%; margin: -100px 0 0 -150px;">
+        <form action="" method="POST">
+            <input id="Suburb" name="Suburb" class="form-control" aria-describedby="" placeholder="Enter Suburb">
+            <br>
+            <input id="Beds" name="Beds" class="form-control" aria-describedby="" placeholder="Enter Beds">
+            <br>
+            <input id="Baths" name="Baths" class="form-control" aria-describedby="" placeholder="Enter Baths">
+            <br>
+            <input id="Cars" name="Cars" class="form-control" aria-describedby="" placeholder="Enter Number of Garages">
+            <br>
+            <input id="Lot" name="Lot" class="form-control" aria-describedby="" placeholder="Enter Lot size">
+            <br>
+            <center><input id="modalBtn" class="btn btn-primary" type="submit" value="Predict" /></center>
+        </form>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <div style="font-size:18px;">
+        {% if valuation > 0 %}
+        
+            <img src="../Prediction.JPG" width="16" height="16" alt=""/
+            <p></p>
+            <font color="green">  Suburb  : {{dsuburb}}<br>
+                                  No Beds : {{dbeds}}<br>
+                                  No Baths: {{dbeds}}<br>
+                                  No Cars   {{dcars}}<br>
+                                  Lot Size: {{dlot}}<br>
+
+            <font color="green">  Predited Valuation is:</font><font color="red"> <b>${{valuation}}</b></font> 
+        {% elif valuation == 0 %}
+            <font color="black">Please enter data.</font>
+        {% endif %}
+    </div>
+
+{% endblock %}

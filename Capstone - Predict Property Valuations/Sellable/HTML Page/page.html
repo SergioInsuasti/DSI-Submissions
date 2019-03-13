@@ -1,0 +1,213 @@
+
+<!-- saved from url=(0026)http://127.0.0.1:5000/page -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style> @-webkit-keyframes loadingoverlay_animation__rotate_right { to { -webkit-transform : rotate(360deg); transform : rotate(360deg); } } @keyframes loadingoverlay_animation__rotate_right { to { -webkit-transform : rotate(360deg); transform : rotate(360deg); } } @-webkit-keyframes loadingoverlay_animation__rotate_left { to { -webkit-transform : rotate(-360deg); transform : rotate(-360deg); } } @keyframes loadingoverlay_animation__rotate_left { to { -webkit-transform : rotate(-360deg); transform : rotate(-360deg); } } @-webkit-keyframes loadingoverlay_animation__fadein { 0% { opacity   : 0; -webkit-transform : scale(0.1, 0.1); transform : scale(0.1, 0.1); } 50% { opacity   : 1; } 100% { opacity   : 0; -webkit-transform : scale(1, 1); transform : scale(1, 1); } } @keyframes loadingoverlay_animation__fadein { 0% { opacity   : 0; -webkit-transform : scale(0.1, 0.1); transform : scale(0.1, 0.1); } 50% { opacity   : 1; } 100% { opacity   : 0; -webkit-transform : scale(1, 1); transform : scale(1, 1); } } @-webkit-keyframes loadingoverlay_animation__pulse { 0% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } 50% { -webkit-transform : scale(1, 1); transform : scale(1, 1); } 100% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } } @keyframes loadingoverlay_animation__pulse { 0% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } 50% { -webkit-transform : scale(1, 1); transform : scale(1, 1); } 100% { -webkit-transform : scale(0, 0); transform : scale(0, 0); } } </style></head><body style="background-image:
+    url(&#39;http://images.freehdw.com/510/drops-ripple-pattern-circle-water-blue-abstract.jpg&#39;);
+    background-repeat:no-repeat;
+    background-size:cover;">﻿
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./page_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="./page_files/jquery.min.js.download"></script>
+    <script src="./page_files/bootstrap.min.js.download" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./page_files/loadingoverlay.min.js.download"></script>
+    <style>
+        .dataframe {
+            table-layout: fixed;
+            width: 100%;
+            border: 1px solid #F8F8F8;
+            border-collapse: collapse;
+            white-space: normal;
+        }
+        /* td {
+            white-space: nowrap;
+            text-overflow:wrap;
+            overflow:visible;
+            /* text-wrap:normal; */
+        /* word-wrap: break-word; */
+        /* }  */
+        th {
+            color: #777777;
+            background-color: #F8F8F8;
+        }
+        /* Column widths are based on these cells */
+        .row-Sentences {
+            /* width: 70%; */
+            color: red;
+        }
+
+        .row-Predictions {
+            /* width: 30%; */
+            color: green;
+        }
+        /* .row-job {
+        width: 30%;
+        }
+        .row-email {
+        width: 20%;
+        } */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 99;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal1 {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0);
+        }
+
+        .modal-content {
+            background-color: rgba(0,0,0,.5);
+            margin: 10% auto;
+            width: 40%;
+            box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+            animation-name: modalopen;
+            animation-duration: 0.5s;
+            border: none;
+            border-radius: 20px;
+            z-index:100;
+            padding: 20px;
+            color:white;
+        }
+
+        .modal-header h4, .modal-footer h5 {
+            margin: 0;
+        }
+
+        .modal-header {
+            background: rgba(0,0,0,.1);
+            padding: 2px;
+            color: #fff;
+        }
+
+        .modal-body {
+            padding: 10px 20px;
+        }
+
+        .modal-footer {
+            background: rgba(0,0,0,.1);
+            padding: 10px;
+            color: #fff;
+            text-align: right;
+        }
+
+        .closeBtn {
+            color: #ccc;
+            float: right;
+            font-size: 30px;
+            color: #fff;
+        }
+
+            .closeBtn:hover, .closeBtn:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        @keyframes modalopen {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 2
+            }
+        }
+
+    </style>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+        <a class="navbar-brand" href="http://127.0.0.1:5000/">Data Science Immersive</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="http://127.0.0.1:5000/page">Page</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar"></ul>
+        <ul class="nav navbar-nav navbar-right">
+         <!-- <li><a href="#">Link</a></li>-->
+          <li class="dropdown">
+            <a href="http://127.0.0.1:5000/page#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://127.0.0.1:5000/page#">Menu1</a></li>
+              <li><a href="http://127.0.0.1:5000/page#">Menu2</a></li>
+              <li><a href="http://127.0.0.1:5000/page#">Menu3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+    <div class="container body-content">
+        
+    <center> <h1><u><font color="blue">Machine Learning with Sellable</font></u></h1></center>
+    <div style="position: absolute; width: 600px; height: 200px; z-index: 15; top: 40%; left: 40%; margin: -100px 0 0 -150px;">
+        <form action="http://127.0.0.1:5000/page" method="POST">
+            <input id="Suburb" name="Suburb" class="form-control" aria-describedby="" placeholder="Enter Suburb">
+            <br>
+            <input id="Beds" name="Beds" class="form-control" aria-describedby="" placeholder="Enter Beds">
+            <br>
+            <input id="Baths" name="Baths" class="form-control" aria-describedby="" placeholder="Enter Baths">
+            <br>
+            <input id="Cars" name="Cars" class="form-control" aria-describedby="" placeholder="Enter Number Garages">
+            <br>
+            <input id="Lot" name="Lot" class="form-control" aria-describedby="" placeholder="Enter Lot size">
+            <br>
+           <center><input id="modalBtn" class="btn btn-primary" type="submit" value="Predict"></center>
+        </form>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <div style="font-size:18px;">
+        
+            <font color="white">Please enter data.</font>
+         
+    </div>
+
+
+        <!--<hr />
+        <footer>
+            <p>&copy;  - Brian Farrell</p>
+        </footer>-->
+    </div>
+
+    <script src="./page_files/jquery-1.10.2.js.download"></script>
+    <script src="./page_files/bootstrap.js.download"></script>
+    <script src="./page_files/respond.js.download"></script>
+    
+
+
+</body></html>

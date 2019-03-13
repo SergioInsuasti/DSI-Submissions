@@ -1,0 +1,104 @@
+variance inflation factor - if the value is constant and greater than five you can drop it.
+
+
+make sure to get the log price out of the calculation in the 15 top renevations
+
+
+patsy not used I used sklearn linear model
+
+
+1 kauai place Kings Park NSW 2148
+
+
+https://www.domain.com.au/property-profile/1-kauai-place-kings-park-nsw-2148
+
+<p class="property-story__content-body "><span class="property-story__data">1 Kauai Place<!-- -->, Kings Park NSW 2148</span> is a House<!-- -->, with 4 bedrooms, 1 bathroom, and 1 parking space. <!-- -->It is on a block of land that is 559 square metres. <!-- -->This House is estimated to be worth around $730k, with a range from $630k to $830k. <!-- -->The Domain property ID is<!-- --> <span class="property-story__data">LA-5476-JE</span><span>, and the Government legal property description is<!-- --> <span class="property-story__data">69/250566</span>.<!-- --> </span></p>
+
+<span class="estimate-card__short-price-display-currency">$</span>730
+
+
+
+
+https://www.realestate.com.au/property/1-kauai-pl-kings-park-nsw-2148
+
+<p class="value-estimates__avm-range">$700,000 - $750,000</p>
+
+
+<div class="rui-col-sm-6 rui-col-xs-12">
+      <table class="info-table">
+        <tbody>
+          <tr>
+  <td>Land size</td>
+  <td>558 ?</td>	
+</tr>
+
+
+
+https://www.allhomes.com.au/ah/research/quarter-sessions-road-westleigh-nsw-2120/1938333710
+https://www.allhomes.com.au/ah/research/6-quarter-sessions-road-westleigh-nsw-2120/20824740611
+
+<tr class="research-table-even">
+                        <td>
+                                                            19/11/2016
+                                                    </td>
+
+                        <td>
+                                                            18/01/2017
+                                                    </td>
+
+                        <td>
+                                                            25/10/2016
+                                                    </td>
+
+                        <td>
+                                                            25
+                                                    </td>
+
+                        <td class="price-suffix">
+                                                            <span class="price-suffix-click" data-full-price="$1,395,000" data-hasqtip="0">
+                                    $1.4m&nbsp;<img src="https://www.allhomes.com.au/ah/image/research/price-expand.png">
+                                </span>
+                                                    </td>
+
+                        <td>
+                                                            696m<sup>2</sup>
+                                                    </td>
+
+                        <td>
+                                                            Full transfer
+                                                    </td>
+
+                        <td>
+                                                            Residence
+                                                    </td>
+
+                        <td>
+                                                            4
+                                                    </td>
+
+                        <td>
+                                                            3
+                                                    </td>
+
+                        <td>
+                                                            –
+                                                    </td>
+
+                        <td>
+                                                            2
+                                                    </td>
+
+                        <td>
+                                                            0
+                                                    </td>
+                    </tr>
+                    
+                    
+ <h2 class="research-header"><span class="min-format-tab-header">Parcel Information:</span> Lot 32 Plan DP239034</h2>
+ 
+ <img src="//gis.allhomes.com.au/gis/generate?a=frmlotmapaus&amp;t=32%2F%2FDP239034&amp;w=280&amp;h=280" alt="Block Map">
+ 
+ <td class="block-detail-table-value">696m<sup>2</sup></td>
+ 
+ 
+ 
